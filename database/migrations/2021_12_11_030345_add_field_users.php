@@ -14,7 +14,7 @@ class AddFieldUsers extends Migration
     public function up()
     {
         schema::table('users',function(Blueprint $table){
-            $table->string('level');
+            $table->string('level')->default('auth');
         });
     }
     
